@@ -1,0 +1,73 @@
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  /* Light Mode */
+  --color-primary: 14 165 233; /* #0EA5E9 */
+  --color-secondary: 30 64 175; /* #1E40AF */
+  --color-background: 255 255 255; /* #FFFFFF */
+  --color-surface: 248 250 252; /* #F8FAFC */
+  --color-text: 30 41 59; /* #1E293B */
+  --color-text-muted: 100 116 139; /* #64748B */
+  --color-accent: 245 158 11; /* #F59E0B */
+  --color-border: 226 232 240; /* #E2E8F0 */
+}
+
+.dark {
+  /* Dark Mode */
+  --color-primary: 56 189 248; /* #38BDF8 */
+  --color-secondary: 96 165 250; /* #60A5FA */
+  --color-background: 15 23 42; /* #0F172A */
+  --color-surface: 30 41 59; /* #1E293B */
+  --color-text: 241 245 249; /* #F1F5F9 */
+  --color-text-muted: 148 163 184; /* #94A3B8 */
+  --color-accent: 252 211 77; /* #FCD34D */
+  --color-border: 51 65 85; /* #334155 */
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text transition-colors duration-300;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .bg-background { background-color: rgb(var(--color-background)); }
+  .bg-surface { background-color: rgb(var(--color-surface)); }
+  .bg-primary { background-color: rgb(var(--color-primary)); }
+  .bg-secondary { background-color: rgb(var(--color-secondary)); }
+  .bg-accent { background-color: rgb(var(--color-accent)); }
+  
+  .text-text { color: rgb(var(--color-text)); }
+  .text-text-muted { color: rgb(var(--color-text-muted)); }
+  .text-primary { color: rgb(var(--color-primary)); }
+  .text-secondary { color: rgb(var(--color-secondary)); }
+  .text-accent { color: rgb(var(--color-accent)); }
+  
+  .border-border { border-color: rgb(var(--color-border)); }
+  .border-primary { border-color: rgb(var(--color-primary)); }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-surface;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-400 rounded-full hover:bg-slate-500;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-slate-600 hover:bg-slate-500;
+}
