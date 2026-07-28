@@ -13,6 +13,7 @@ import p13 from './p13.jpg';
 import p15 from './p15.jpg';
 import p16 from './p16.jpg';
 import p17 from './p17.jpg';
+import p18 from './p18.jpg';
 import favicon from './favicon.png';
 
 export const localImages = {
@@ -31,5 +32,6 @@ export const localImages = {
   p15,
   p16,
   p17,
+  p18,
   favicon,
 };

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Play, Quote } from 'lucide-react';
 import { Button } from './ui/Button';
+import { localImages } from '../images';
 interface SermonSlide {
   id: number;
   preacher: string;
@@ -18,7 +19,7 @@ const sermons: SermonSlide[] = [
   id: 1,
   preacher: 'Rev. Dr. Samuel Johnson',
   role: 'Senior Pastor',
-  photo:'src/images/p15.jpg',
+  photo: localImages.p15,
   theme: 'Walking in Faith',
   verse: 'Hebrews 11:1',
   quote:
@@ -31,8 +32,7 @@ const sermons: SermonSlide[] = [
   id: 2,
   preacher: 'Pastor Sarah Williams',
   role: 'Associate Pastor',
-  photo:
-  'src/images/p12.jpg',
+  photo: localImages.p12,
   theme: 'The Power of Grace',
   verse: 'Ephesians 2:8',
   quote:
@@ -45,8 +45,7 @@ const sermons: SermonSlide[] = [
   id: 3,
   preacher: 'Bishop Michael Chen',
   role: 'Guest Speaker',
-  photo:
-  'src/images/p8.jpg',
+  photo: localImages.p8,
   theme: 'Community & Fellowship',
   verse: 'Acts 2:42',
   quote:

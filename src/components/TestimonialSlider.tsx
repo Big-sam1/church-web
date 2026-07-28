@@ -1,29 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Quote } from 'lucide-react';
+import { localImages } from '../images';
 const testimonials = [
 {
   id: 1,
   name: 'John',
   role: 'Members since 2018',
-  image:
-  'src/images/p2.jpg',
+  image: localImages.p2,
   text: "Finding Jesus Is King Ministry was a turning point for our family. The community here is so welcoming and genuine. We've grown so much in our faith."
 },
 {
   id: 2,
   name: 'Emily Chen',
   role: 'Youth Leader',
-  image:
-  'src/images/p4.jpg',
+  image: localImages.p4,
   text: 'The youth ministry here is incredible. Seeing young lives transformed by the Gospel is the highlight of my week. This church truly cares about the next generation.'
 },
 {
   id: 3,
   name: 'Marcus Johnson',
   role: 'Worship Team',
-  image:
-  'src/images/p1.jpg',
+  image: localImages.p1,
   text: "There's a spirit of excellence and freedom in worship here that I haven't found anywhere else. It's a place where you can truly encounter God."
 }];
 

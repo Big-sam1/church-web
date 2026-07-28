@@ -8,6 +8,7 @@ import { EventCard } from '../components/EventCard';
 import { Button } from '../components/ui/Button';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { localImages } from '../images';
 export function HomePage() {
   return (
     <div className="min-h-screen">
@@ -51,7 +52,7 @@ export function HomePage() {
               time="9:00 AM - 2:00 PM"
               location="City Park"
               category="Outreach"
-              image="src/images/p17.jpg" />
+              image={localImages.p17} />
             
             <EventCard
               title="Christmas Choir Practice"
@@ -59,7 +60,7 @@ export function HomePage() {
               time="7:00 PM - 8:30 PM"
               location="Music Room"
               category="Music"
-              image="src/images/p16.jpg" />
+              image={localImages.p16} />
             
           </div>
 

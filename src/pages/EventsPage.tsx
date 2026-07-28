@@ -6,6 +6,7 @@ import {
   ChevronRight } from
 'lucide-react';
 import { Button } from '../components/ui/Button';
+import { localImages } from '../images';
 export function EventsPage() {
   return (
     <div className="pt-20 min-h-screen bg-background">
@@ -65,7 +66,7 @@ export function EventsPage() {
             time="7:00 PM - 8:30 PM"
             location="Music Room"
             category="Music"
-            image="src/images/p16.jpg" />
+            image={localImages.p16} />
           
           <EventCard
             title="Men's Breakfast"

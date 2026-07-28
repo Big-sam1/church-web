@@ -1,6 +1,7 @@
 import React, { Children } from 'react';
 import { MinistryCard } from '../components/MinistryCard';
 import { Users, Heart, Music, BookOpen, Coffee, Globe } from 'lucide-react';
+import { localImages } from '../images';
 export function MinistriesPage() {
   const ministries = [
   {
@@ -39,16 +40,14 @@ export function MinistriesPage() {
     title: 'Worship & Arts',
     description:
     'Using music, media, and creative arts to glorify God and lead the congregation in praise.',
-    image:
-    'src/images/p18.jpg',
+    image: localImages.p18,
     icon: <Music className="w-6 h-6 text-white" />
   },
   {
     title: 'Community Outreach',
     description:
     "Extending God's love beyond our walls through food drives, service projects, and local missions.",
-    image:
-    'src/images/p17.jpg',
+    image: localImages.p17,
     icon: <Globe className="w-6 h-6 text-white" />
   }];
 
