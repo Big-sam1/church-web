@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Heart } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
 import { Button } from './ui/Button';
 import { motion, AnimatePresence } from 'framer-motion';
+import { localImages } from '../images';
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -60,8 +61,8 @@ export function Header() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="bg-primary p-2 rounded-lg group-hover:bg-secondary transition-colors">
-              <Heart className="w-6 h-6 text-white fill-current" />
+            <div className="rounded-lg group-hover:opacity-90 transition-opacity overflow-hidden">
+              <img src={localImages.favicon} alt="Jesus Is King" className="w-10 h-10 object-contain" />
             </div>
             <div className="flex flex-col">
               <span

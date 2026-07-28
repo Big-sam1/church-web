@@ -6,12 +6,12 @@ import {
   Instagram,
   Youtube,
   Mail,
-  Heart,
   MapPin,
   Phone } from
 'lucide-react';
 import { Button } from './ui/Button';
 import { Input } from './ui/Input';
+import { localImages } from '../images';
 export function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-300">
@@ -20,8 +20,8 @@ export function Footer() {
           {/* Brand & Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
-              <div className="bg-primary p-2 rounded-lg">
-                <Heart className="w-6 h-6 text-white fill-current" />
+              <div className="rounded-lg overflow-hidden">
+                <img src={localImages.favicon} alt="Jesus Is King" className="w-10 h-10 object-contain" />
               </div>
               <span className="font-bold text-xl text-white">
                 JESUS IS KING MINISTRY
